@@ -415,3 +415,21 @@ font-weight:500;
 .contact-link:hover{
 text-decoration:underline;
 }
+
+.nav-logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-family:'Syne';
+font-weight:800;
+}
+
+.brand-name span{
+color:var(--sage);
+}
+
+.nav-logo img{
+height:70px;
+width:auto;
+object-fit:contain;
+}

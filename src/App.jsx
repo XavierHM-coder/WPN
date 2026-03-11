@@ -1,4 +1,5 @@
 import "./App.css"
+import logo from "./assets/logo.png"
 import { Link } from "react-router-dom"
 
 function App() {
@@ -11,8 +12,14 @@ function App() {
       <nav className="nav">
 
         <div className="nav-logo">
-          Weightloss<span>Nutrition</span>
-        </div>
+
+  <img src={logo} alt="logo"/>
+
+  <span className="brand-name">
+    Weightloss<span>Nutrition</span>
+  </span>
+
+</div>
 
         <div className="nav-links">
 
