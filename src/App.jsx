@@ -28,6 +28,9 @@ function App() {
           <a href="#features">
             Benefits
           </a>
+          <Link to="/about">
+  About Us
+</Link>
 
           <Link to="/products">
             Products
