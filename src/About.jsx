@@ -1,136 +1,162 @@
 import "./About.css"
-import "./App.css"
-import logo from "./assets/logo.png"
+import { Link } from "react-router-dom"
 
 function About() {
 
   return (
-      
 
-    <div className="about">
+    <div className="about-page">
 
-      {/* HERO */}
+      {/* ── NAV ── */}
 
-      <section className="about-hero">
+      <nav className="products-nav">
 
-        <div className="about-hero-content">
+        <div className="nav-logo">
+          Weightloss<span>Nutrition</span>
+        </div>
 
-          <h1>About Us</h1>
+        <div className="nav-links">
 
-          <p>
-            Helping people transform their health through
-            personalized nutrition and sustainable habits.
-          </p>
+          <Link to="/">Home</Link>
+
+          <a href="/#features">
+            Benefits
+          </a>
+
+          <Link to="/about">
+            About Us
+          </Link>
+
+          <Link to="/products">
+            Products
+          </Link>
+
+          <Link to="/contact">
+            Contact
+          </Link>
 
         </div>
 
-      </section>
+      </nav>
 
 
-      {/* STORY */}
+      {/* ── HERO ── */}
 
-      <section className="about-story">
+      <div className="about-hero">
 
-        <div className="about-container">
+        <h1>About <em>Our</em> Program</h1>
 
-          <div className="about-text">
+        <p>
+          Helping people improve their health through personalized
+          nutrition plans and sustainable habits.
+        </p>
 
-            <h2>Our Approach to Health</h2>
+        <div className="hero-divider">
 
-            <p>
-              At Weightloss Professional Nutrition, we help
-              people improve their health through personalized
-              guidance and proven systems.
-            </p>
+          <div className="hero-divider-line"></div>
 
-            <p>
-              For over nine years, we’ve supported individuals
-              in reducing inflammation, regaining energy,
-              and building sustainable habits that last.
-            </p>
+          <span>🌿</span>
 
-            <p>
-              Our approach focuses on steady progress,
-              strong support, and long-term health —
-              helping every client create a healthier future.
-            </p>
-
-          </div>
-
-          <div className="about-image">
-            <img src="https://images.unsplash.com/photo-1666886573212-2de95596d509?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          </div>
+          <div className="hero-divider-line r"></div>
 
         </div>
 
-      </section>
+      </div>
 
 
-      {/* VALUES */}
-
-      <section className="about-values">
-
-        <h2>Why Choose Us</h2>
-
-        <div className="values-grid">
-
-          <div className="value-card">
-            <h3>Personalized Plans</h3>
-            <p>
-              Every nutrition plan is customized
-              to your metabolism and lifestyle.
-            </p>
-          </div>
-
-          <div className="value-card">
-            <h3>Proven Systems</h3>
-            <p>
-              Our methods are designed to help
-              reduce inflammation and improve energy.
-            </p>
-          </div>
-
-          <div className="value-card">
-            <h3>Long-Term Results</h3>
-            <p>
-              We focus on building sustainable
-              habits that last for life.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* STATS */}
+      {/* ── STATS ── */}
 
       <section className="about-stats">
 
-        <div className="stats-container">
+        <div className="stat-card">
+          <h2>9+</h2>
+          <p>Years Experience</p>
+        </div>
 
-          <div className="stat">
-            <h3>9+</h3>
-            <p>Years Experience</p>
+        <div className="stat-card">
+          <h2>500+</h2>
+          <p>Clients Helped</p>
+        </div>
+
+        <div className="stat-card">
+          <h2>1000+</h2>
+          <p>Nutrition Plans</p>
+        </div>
+
+        <div className="stat-card">
+          <h2>95%</h2>
+          <p>Client Satisfaction</p>
+        </div>
+
+      </section>
+
+
+      {/* ── CONTENT ── */}
+
+      <section className="about-section">
+
+        <div className="about-grid">
+
+          <div className="about-card">
+
+            <h3>Personalized Nutrition</h3>
+
+            <p>
+              Every metabolism is unique. Our nutrition
+              programs are customized to fit your body,
+              lifestyle and personal goals.
+            </p>
+
           </div>
 
-          <div className="stat">
-            <h3>100+</h3>
-            <p>Clients Supported</p>
+
+          <div className="about-card">
+
+            <h3>Expert Guidance</h3>
+
+            <p>
+              Our system combines professional nutrition
+              strategies with practical habits to help
+              you transform your health.
+            </p>
+
           </div>
 
-          <div className="stat">
-            <h3>100%</h3>
-            <p>Personalized Plans</p>
+
+          <div className="about-card">
+
+            <h3>Sustainable Results</h3>
+
+            <p>
+              We focus on long-term results by building
+              healthy habits instead of temporary diets.
+            </p>
+
           </div>
 
         </div>
+
+      </section>
+
+
+      {/* ── MISSION ── */}
+
+      <section className="about-mission">
+
+        <h2>Our Mission</h2>
+
+        <p>
+          To empower people with the knowledge and tools
+          they need to achieve sustainable wellness and
+          long-term health transformation.
+        </p>
 
       </section>
 
     </div>
 
   )
+
 }
 
 export default About

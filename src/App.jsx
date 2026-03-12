@@ -5,21 +5,18 @@ import { Link } from "react-router-dom"
 function App() {
 
   return (
-    <div className="app">
+    <div className="home-page">
 
       {/* NAVBAR */}
 
-      <nav className="nav">
+      <nav className="products-nav">
 
         <div className="nav-logo">
-
-  <img src={logo} alt="logo"/>
-
-  <span className="brand-name">
-    Weightloss<span>Nutrition</span>
-  </span>
-
-</div>
+          <img src={logo} alt="logo"/>
+          <span className="brand-name">
+            Weightloss<span>Nutrition</span>
+          </span>
+        </div>
 
         <div className="nav-links">
 
@@ -28,9 +25,10 @@ function App() {
           <a href="#features">
             Benefits
           </a>
+
           <Link to="/about">
-  About Us
-</Link>
+            About Us
+          </Link>
 
           <Link to="/products">
             Products
@@ -52,15 +50,15 @@ function App() {
         <div className="hero-content">
 
           <h1>
-            Precision Nutrition
+            Personalized Nutrition
             <br />
-            For Your Body
+            For a Healthier Life
           </h1>
 
           <p>
-            Transform your body with personalized nutrition
-            coaching designed for your metabolism,
-            lifestyle and goals.
+            Professional nutrition programs designed to help you
+            reduce inflammation, increase energy and build
+            sustainable healthy habits.
           </p>
 
           <div className="hero-buttons">
@@ -84,32 +82,76 @@ function App() {
       </section>
 
 
-      {/* FEATURES */}
+      {/* STATS */}
+
+      <section className="stats">
+
+        <div className="stat-card">
+          <h2>9+</h2>
+          <p>Years Experience</p>
+        </div>
+
+        <div className="stat-card">
+          <h2>500+</h2>
+          <p>Clients Helped</p>
+        </div>
+
+        <div className="stat-card">
+          <h2>1000+</h2>
+          <p>Nutrition Plans</p>
+        </div>
+
+        <div className="stat-card">
+          <h2>95%</h2>
+          <p>Success Rate</p>
+        </div>
+
+      </section>
+
+
+      {/* BENEFITS */}
 
       <section className="features" id="features">
 
-        <div className="feature-card">
-          <h3>Personalized Plans</h3>
-          <p>
-            Nutrition programs tailored specifically
-            to your metabolism and lifestyle.
-          </p>
-        </div>
+        <h2>Why Choose Our Program</h2>
 
-        <div className="feature-card">
-          <h3>Expert Coaching</h3>
-          <p>
-            Work directly with certified nutrition
-            professionals guiding your progress.
-          </p>
-        </div>
+        <div className="features-grid">
 
-        <div className="feature-card">
-          <h3>Sustainable Results</h3>
-          <p>
-            Build healthy habits designed for
-            long-term transformation.
-          </p>
+          <div className="feature-card">
+
+            <h3>Personalized Plans</h3>
+
+            <p>
+              Every client receives a nutrition plan designed
+              specifically for their metabolism and lifestyle.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Expert Guidance</h3>
+
+            <p>
+              Work with experienced nutrition professionals
+              supporting your progress every step of the way.
+            </p>
+
+          </div>
+
+
+          <div className="feature-card">
+
+            <h3>Sustainable Habits</h3>
+
+            <p>
+              Our focus is creating long-term habits that help
+              maintain your results for life.
+            </p>
+
+          </div>
+
         </div>
 
       </section>
@@ -119,11 +161,11 @@ function App() {
 
       <section className="cta">
 
-        <h2>Start Your Transformation</h2>
+        <h2>Start Your Health Transformation</h2>
 
         <p>
-          Join hundreds of people improving their health
-          with personalized nutrition programs.
+          Join hundreds of clients improving their health,
+          energy and confidence through personalized nutrition.
         </p>
 
         <Link to="/contact">
@@ -139,11 +181,11 @@ function App() {
 
       <section className="products-preview">
 
-        <h2>Our Products</h2>
+        <h2>Nutrition Products</h2>
 
         <p>
-          Discover our premium supplements designed to support
-          your health and fitness journey.
+          Complement your nutrition program with products
+          designed to support metabolism, recovery and energy.
         </p>
 
         <Link to="/products">
@@ -162,15 +204,17 @@ function App() {
         <div className="footer-container">
 
           <div className="footer-brand">
+
             <h3>
               Weightloss<span>Nutrition</span>
             </h3>
 
             <p>
-              Professional nutrition programs and premium
-              supplements designed to help you achieve
-              long-term wellness and sustainable results.
+              Professional nutrition programs designed to
+              help people achieve sustainable health and
+              long-term wellness.
             </p>
+
           </div>
 
 
@@ -179,6 +223,10 @@ function App() {
             <h4>Company</h4>
 
             <a href="#">Home</a>
+
+            <Link to="/about">
+              About Us
+            </Link>
 
             <Link to="/products">
               Products
