@@ -9,6 +9,14 @@ import hot_chocolate    from "./assets/hot_chocolate.jpeg"
 import chocolate_peanut from "./assets/chocolate_peanut.jpeg"
 import vanilla_drink    from "./assets/vanilla_drink.jpeg"
 import cream_chicken    from "./assets/cream_chicken.jpeg"
+import Wild_berry       from "./assets/Wild_berry.jpg"
+import chocolate_drink  from "./assets/chocolate_drink.jpg"
+import mac_chese        from "./assets/mac_chese.jpg"
+import alfredo_pasta    from "./assets/alfredo_pasta.jpg"
+import chilli_vege      from "./assets/chilli_vege.jpg"
+import chicken_boullion from "./assets/chicken_boullion.jpg"
+import mashed_potatoes  from "./assets/mashed_potatoes.jpg"
+import ranch_crisp       from "./assets/ranch_crisp.png"  
 
 /* ── Catalog data ── */
 const PRODUCTS = [
@@ -80,21 +88,75 @@ const PRODUCTS = [
   },
    {
     id: 8,
-    img: cream_chicken,
-    name: "Cream of Chicken Soup",
-    category: "Meals",
-    tag: "🥣 Tasty",
+    img: Wild_berry,
+    name: "Wild Berry Smoothie",
+    category: "Drinks",
+    tag: "🍓 Antioxidants",
     description:
-      "A comforting creamy chicken soup that supports your wellness goals with high-quality protein and satisfying flavor.",
+      "A refreshing fruit drink bursting with the sweet and tangy flavors of mixed wild berries. Packed with antioxidants and nutrients to support your health and wellness goals.",
   },
   {
     id: 9,
-    img: cream_chicken,
-    name: "Cream of Chicken Soup",
-    category: "Meals",
-    tag: "🥣 Tasty",
+    img: chocolate_drink,
+    name: "Chocolate Drink",
+    category: "Drinks",
+    tag: "🍫 Antioxidants",
     description:
-      "A comforting creamy chicken soup that supports your wellness goals with high-quality protein and satisfying flavor.",
+      "A smooth and flavorful chocolate drink mix that creates a rich and satisfying beverage when blended with milk or water.",
+  },
+  {
+    id: 10,
+    img: mac_chese,
+    name: "Mac and Cheese",
+    category: "Meals",
+    tag: "🧀 Comforting",
+    description:
+      "Classic macaroni pasta coated in a rich and creamy cheese sauce for a comforting and satisfying meal.",
+  },
+  {
+    id: 11,
+    img: alfredo_pasta,
+    name: "Alfredo Pasta",
+    category: "Meals",
+    tag: "🧀 Comforting",
+    description:
+      "Creamy Alfredo pasta tossed in a rich and indulgent cheese sauce for a comforting and satisfying meal."
+  },
+  {
+    id: 12,
+    img: chilli_vege,
+    name: "Alfredo Vegetable Chili with Beans Pasta",
+    category: "Meals",
+    tag: "🧀 Comforting",
+    description:
+      "Don’t wait hours on your slow cooker! Spice up your dinner with High Protein Vegetable Chili with Beans, packed with protein and satiating, heart-healthy fiber and minimal carbs and fat."
+  },
+  {
+    id: 13,
+    img: chicken_boullion,
+    name: "Chicken Bouillon Soup",
+    category: "Meals",
+    tag: "🧀 Comforting",
+    description:
+      "Our savory Chicken Bouillon soup is the perfect way to warm your palate while staying on track with your nutrition goals. Packed with flavor and nutrients, it's a comforting choice for any meal."
+  },
+  {
+    id: 14,
+    img: mashed_potatoes,
+    name: "Mashed Potatoes",
+    category: "Meals",
+    tag: "🧀 Comforting",
+    description:
+      "Our savory Mashed Potatoes are the perfect side dish to complement any meal. Packed with flavor and nutrients, they're a comforting choice for any occasion."
+  },
+  {
+    id: 15,
+    img: ranch_crisp,
+    name: "Ranch Crisps",
+    category: "Meals",
+    tag: "🧀 Comforting",
+    description:
+      "Crunch into satisfaction with Ranch Crisps—packed with 18 grams of protein, only 120 calories, and less than 5 grams of fat."
   },
 ]
 
@@ -174,12 +236,12 @@ export default function Products() {
 
       {/* ── NAV ── */}
       <nav className="products-nav">
-        <div className="nav-logo">Weightloss<span>Nutrition</span></div>
+        <div className="nav-logo">Weightloss<span>Professional</span><span>Nutrition</span></div>
         <div className="nav-right">
-          <Link to="/" className="back-btn">← Regresar</Link>
+          <Link to="/" className="back-btn">← Back</Link>
 
           <button className="cart-toggle-btn" onClick={() => setDrawer(true)}>
-            🛒 Carrito
+            🛒 Cart
             {totalItems > 0 && (
               <span className="cart-badge pop" key={totalItems}>{totalItems}</span>
             )}

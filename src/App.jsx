@@ -14,7 +14,7 @@ function App() {
         <div className="nav-logo">
           <img src={logo} alt="logo"/>
           <span className="brand-name">
-            Weightloss<span>Nutrition</span>
+            Weightloss<span>Professional</span><span>Nutrition</span>
           </span>
         </div>
 
@@ -245,11 +245,11 @@ function App() {
 
             <div className="social-icons">
 
-              <a href="#">
+              <a href="https://www.instagram.com/weightlosspronutrition?igsh=MXdqMmg4N2FqMnM2cg==" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-instagram"></i>
               </a>
 
-              <a href="#">
+              <a href="https://www.facebook.com/share/18QNkc6i2o/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-facebook"></i>
               </a>
 

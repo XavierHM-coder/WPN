@@ -254,7 +254,7 @@ text-decoration:none;
 }
 
 .footer-links a:hover{
-color:white;
+color:#5e9918;
 }
 
 .social-icons{
@@ -268,4 +268,118 @@ text-align:center;
 padding:20px;
 border-top:1px solid #5e9918;
 color:#444;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+/* NAVBAR */
+
+.products-nav{
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+
+/* HERO */
+
+.hero{
+padding:80px 20px 50px;
+}
+
+.hero-content h1{
+font-size:32px;
+line-height:1.2;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons{
+flex-direction:column;
+gap:15px;
+align-items:center;
+}
+
+.btn-primary,
+.btn-secondary{
+width:100%;
+max-width:250px;
+}
+
+
+/* STATS */
+
+.stats{
+padding:40px 20px;
+gap:20px;
+}
+
+.stat-card{
+padding:25px;
+}
+
+
+/* FEATURES */
+
+.features{
+padding:60px 20px;
+}
+
+.features h2{
+font-size:28px;
+}
+
+.features-grid{
+grid-template-columns:1fr;
+}
+
+
+/* CTA */
+
+.cta{
+padding:60px 20px;
+}
+
+.cta h2{
+font-size:28px;
+}
+
+
+/* PRODUCTS */
+
+.products-preview{
+padding:60px 20px;
+}
+
+.products-preview h2{
+font-size:28px;
+}
+
+
+/* FOOTER */
+
+.footer-container{
+padding:40px 20px;
+text-align:center;
+}
+
+.social-icons{
+justify-content:center;
+}
+
 }
