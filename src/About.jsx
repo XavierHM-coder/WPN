@@ -46,10 +46,15 @@ function About() {
 
         <h1>About <em>Our</em> Program</h1>
 
-        <p>
-          Helping people improve their health through personalized
-          nutrition plans and sustainable habits.
-        </p>
+  <p>
+For over nine years, we’ve helped individuals reduce inflammation, regain energy, 
+and build sustainable habits through personalized nutrition guidance.
+</p>
+
+<p>
+Our approach focuses on steady progress, strong support, and long-term health—helping 
+every client create a healthier future.
+</p>
 
         <div className="hero-divider">
 
@@ -75,7 +80,7 @@ function About() {
 
         <div className="stat-card">
           <h2>500+</h2>
-          <p>Clients Helped</p>
+          <p>Satisfied Customers</p>
         </div>
 
         <div className="stat-card">
